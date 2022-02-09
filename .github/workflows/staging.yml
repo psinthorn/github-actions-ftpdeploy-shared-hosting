@@ -17,4 +17,4 @@ jobs:
         server: staging.f2connect.com
         username: ${{ secrets.ftp_user_staging }}
         password: ${{ secrets.ftp_password_staging }}
-        server-dir: /staging/
+        server-dir: /
