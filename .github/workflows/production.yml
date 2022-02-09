@@ -2,7 +2,7 @@
 on: 
   push:
     branches:
-      - master
+      - main
 name: 🚀 Deploy production website on push
 jobs:
   web-deploy:
@@ -18,4 +18,7 @@ jobs:
         server: ftp.f2connect.com
         username: ${{ secrets.ftp_username }}
         password: ${{ secrets.ftp_password }}
-        server-dir: /public_html/
+        # server-dir: /public_html/
+
+########################################################
+# server-dir พารามิเตอร์จะใช้เพื่อระบุ path ของ folder โดยตรงด้วยตัวเอง 
